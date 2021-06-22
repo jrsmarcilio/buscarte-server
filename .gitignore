@@ -2,4 +2,4 @@
 yarn.lock
 /artists.json
 /espacos_culturais.json
-.env
+.env-dev
