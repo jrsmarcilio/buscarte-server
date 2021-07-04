@@ -5,7 +5,6 @@ var _Artista_categoria = require('../models/Artista_categoria'); var _Artista_ca
 class ArtistaController {
   async index(req, res) {
     const artistas = await _Artista2.default.findAll({
-      attributes: ["id_artista", "nome", "nome_artistico", "instagram"],
       include: {
         model: _Artista_categoria2.default,
         attributes: ["fk_categoria_id_categoria", "fk_artista_id_artista"],
