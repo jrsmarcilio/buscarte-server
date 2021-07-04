@@ -5,7 +5,6 @@ import Artista_categoria from "../models/Artista_categoria";
 class ArtistaController {
   async index(req, res) {
     const artistas = await Artista.findAll({
-      attributes: ["id_artista", "nome", "nome_artistico", "instagram"],
       include: {
         model: Artista_categoria,
         attributes: ["fk_categoria_id_categoria", "fk_artista_id_artista"],

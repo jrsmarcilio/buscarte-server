@@ -1,6 +1,5 @@
 import Atelie from "../models/Atelie";
 import Artista from "../models/Artista";
-import Artista_atelie from "../models/Artista_atelie";
 import Artista_foto_atelie from "../models/Artista_foto_atelie";
 import Foto_atelie from "../models/Foto_atelie";
 
