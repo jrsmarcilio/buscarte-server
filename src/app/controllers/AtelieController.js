@@ -24,7 +24,7 @@ class AtelieController {
   }
 
   async show(req, res) {
-    const atelies = await Artista.findOne({
+    const atelies = await Atelie.findOne({
       where: {
         id_atelie: req.params.id,
       },
