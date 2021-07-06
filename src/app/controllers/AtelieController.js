@@ -28,6 +28,12 @@ class AtelieController {
       where: {
         id_atelie: req.params.id,
       },
+      include: {
+        model: Artista_foto_atelie,
+        include: {
+          model: Foto_atelie,
+        },
+      },
     });
 
     if (!atelies) {
